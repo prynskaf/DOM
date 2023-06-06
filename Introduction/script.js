@@ -18,8 +18,14 @@ console.log(pageTItle.textContent);
 // let ulElements = contextElement.querySelectorAll("ul");
 // let liElements = contextElement.querySelectorAll("li");
 
-console.log(ulElements.inner);
-console.log(liElements);
+// console.log(ulElements.inner);
+// console.log(liElements);
+
+const listItems = document.querySelectorAll("ul > li");
+console.log(listItems); 
+
+
+
 
 
 
