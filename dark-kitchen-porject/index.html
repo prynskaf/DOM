@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dark Kitchen</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <header>
+    <h1>Dark Kitchen</h1>
+    <button id="darkModeToggle" class="darkModeToggle">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <div id="categories">
+      <button class="categoryBtn" data-category="all">All</button>
+      <button class="categoryBtn" data-category="vegan">Vegan</button>
+      <button class="categoryBtn" data-category="comfort">Comfort Food</button>
+    </div>
+
+
+
+
+    <div id="foodList">
+      <div class="card" data-category="vegan">
+        <h2>Vegan Burger</h2>
+        <p>$9.99</p>
+        <button class="addToCartBtn">Add to Cart</button>
+      </div>
+      <div class="card" data-category="comfort">
+        <h2>Mac and Cheese</h2>
+        <p>$7.99</p>
+        <button class="addToCartBtn">Add to Cart</button>
+      </div>
+      <!-- Add more food cards here -->
+    </div>
+
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cartItems"></ul>
+      <p id="totalAmount">Total: $0.00</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
