@@ -55,5 +55,5 @@ darkModeToggle.addEventListener('click', () => {
 //menu icon toggle
 hamMenu.addEventListener('click' , () => {
     hamMenu.style.display = 'none';
-    hamMenu.style.transition = "all 0.3s ease-in"
+    hamMenu.style.transition = "all 0.3s ease-in";
 })

@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <header> 
-        <div class="log"></div>
+        <i id="darkBtn" type="button" class="fas fa-toggle-off"></i>
+   
+        <div class="header__btn">
+            <button class="darkModeToggle" id="darkModeToggle"></button>
+        </div>
+        <div class="log">
+            <img src="images/Restaurant.png" alt="logo" width="80" height="60">
+        </div>
         <div class="header__link">
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">contact</a>
         </div>
-        <div class="button">
-            <button class="darkModeToggle" id="darkModeToggle">Toggle Dark Mode</button>
-        </div>
-
-      <script src="script.js"></script>
+      <div class="header__close"><i class="bi bi-list"></i></div>
     </header>
+
+    <script src="script.js"></script>
 </body>
 </html>

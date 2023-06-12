@@ -11,12 +11,29 @@ body {
   
   header {
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__btn button img {
+   mix-blend-mode: color-burn;
   }
   
+
+   .header__close .bi {
+     font-size: 30px;
+   }
+
+
   main {
-    display: flex;
-    padding: 20px;
+   padding: 20px;
   }
   
   .card {
