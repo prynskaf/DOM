@@ -31,11 +31,12 @@ const collection = [
   const title = document.querySelector('.title');
   const director = document.querySelector('.director');
   const cast = document.querySelector('.cast');
-  const line = document.querySelector('line');
+
+ 
 
 
 
-  // fuction forclard list 
+  // function forclard list 
   const cardList = (section) => {
 
     // Create a new card element
@@ -51,6 +52,7 @@ const collection = [
     img.className = 'img';
     // appending the class name img into card
     card.appendChild(img);
+    img.src = collection[0][1];
 
     
     
@@ -61,8 +63,8 @@ const collection = [
     // putting the nested btn into btn;
     btn.innerHTML = `
     <button class = 'releaseYear'>1970</button>
-    <button class= 'genre'> Drama</button>
-    `
+    <button class= 'genre'>Drama</button>
+    `;
     // appending  btn with nested element into card 
     card.appendChild(btn);
 
@@ -75,7 +77,7 @@ const collection = [
     info.innerHTML= `
      <h1 class="title">Name</h1>
      <p class= "director">jean-Didier Enroule</p>
-    `
+    `;
      // appending  info with nested element into card 
      card.appendChild(info);
 
@@ -92,21 +94,15 @@ const collection = [
      adipisicing elit. Quae inventore nisi, earum commodi amet 
      repellat ad 
      deleniti sapiente rem maiores!</p>
-     `
+     `;
     // append the text with nested info into card 
     card.appendChild(text);
 
-    //creating a new div for line 
-    const line = document.querySelector('div')
-
-    // adding a class name to it 
-    line.className = "line";
-
-    //then append it into card
-    card.appendChild(line);
+    
    
   };
   cardList(section);
 
   
 
+console.log(collection[0]);
