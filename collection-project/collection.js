@@ -66,13 +66,31 @@
       youtubeLink: 'https://youtu.be/AHmCH7iB_IM?t=4',
     },
     {
-      img: 'https://dx35vtwkllhj9.cloudfront.net/united-artists-releasing/creed-iii/images/regions/us/share.jpg',
+      img: 'https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2023/04/TheCovenant.jpg',
       rereleaseYear: '2023',
       genre: 'Action',
       title:" Guy Ritchie's The Covenant",
       director: 'Guy Ritchie',
       cast:[ " Julianne Moore, Sebastian Stan, Justice Smith, Briana Middleton"],
       youtubeLink: 'https://www.imdb.com/video/vi1880737049/?playlistId=tt4873118&ref_=tt_ov_vi',
+    },
+    {
+      img: 'https://i.ytimg.com/vi/aOb15GVFZxU/maxresdefault.jpg',
+      rereleaseYear: '2023',
+      genre: 'Crime',
+      title:" Fast X",
+      director: 'Louis Leterrier',
+      cast:[ " Vin Diesel, Michelle Rodriguez, Jason Statham, Jordana Brewster"],
+      youtubeLink: 'https://www.imdb.com/video/vi2052375577/?playlistId=tt5433140&ref_=tt_pr_ov_vi',
+    },
+    {
+      img: 'https://m.media-amazon.com/images/I/81e99nwZL5L._RI_SX720_FMjpg_.jpg',
+      rereleaseYear: '2023',
+      genre: 'Action, Adventure, Fantasy',
+      title:"The Flash",
+      director: 'Andy Muschietti',
+      cast:[ "  Sasha Calle, Ben Affleck, Ezra Miller, Michael Keaton"],
+      youtubeLink: 'https://www.imdb.com/video/vi2403779609/?playlistId=tt0439572&ref_=tt_ov_vi',
     },
   ];
 
