@@ -1,123 +1,140 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-   height: 100vh;
-   width: 100vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
 }
 
-/* mobile */
+.container {
+  min-width: 100%;
+
+ 
+}
 
 .header {
-    margin: 20px 10px;
-    display: flex;
-    flex-direction: column;
+  margin: 20px 10px;
 }
 
-
 .header__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header__logo {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(18, 27, 152);
-    border: none;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(18, 27, 152);
+  border: none;
+  border-radius: 50%;
 }
 
 .header__heading {
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(18, 27, 152);
-    padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(18, 27, 152);
+  padding: 20px;
 }
 
 .header__text {
-    font-size: 15px;
-    font-weight: normal;
-    color: rgb(18, 27, 152);
-    margin: 20px 10px;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgb(18, 27, 152);
+  margin: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .section {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
 }
 
 .card {
-    margin: 20px 20px;
-    width: 370px;
-    border: 2px solid blue;
+  margin: 20px 20px;
+  width: 370px;
 }
 
-.img {
-    width: 370px;
-    height: 200px;
-    background-color: grey;
+.image {
+  width: 370px;
+  height: 200px;
+  background-color: grey;
 }
 
 .btn {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .btn .releaseYear,
 .btn .genre {
-    cursor: pointer;
-    margin: 0 6px;
-    padding: 6px 18px;
+  cursor: pointer;
+  margin: 0 6px;
+  padding: 6px 18px;
 }
 
 .btn .releaseYear {
-    cursor: pointer;
-    background-color: rgb(255, 221, 87);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 17px;
+  background-color: rgb(255, 221, 87);
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
 }
 
 .btn .genre {
-    cursor: pointer;
-    background-color: rgb(87, 195, 255);
-    border: none;
-    border-radius: 5px;
-    font-size: 17px;
+  background-color: rgb(87, 195, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .info .title {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .info .director {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .card .text {
-    margin: 20px 0px;
-    font-weight: normal;
+  margin: 20px 0px;
+  font-weight: normal;
 }
 
-/* desktop version */
+.line {
+  border-bottom: 2px solid gray;
+  margin-top: 50px;
+}
+
+.youtubeLink {
+  color: red;
+  font-size: 30px;
+  margin: 10px 0;
+}
+/* Desktop version */
 @media (min-width: 500px) {
-    .container {
-        max-width: 768px;
-    }
-    body {
-        background-color: red;
-    }
+  body {
+    background-color: initial;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 370px;
+  }
+
+  .image {
+    width: 370px;
+  }
 }
