@@ -1,13 +1,50 @@
-// export const collection = [
-//     {
-//       img: 'https://ntvb.tmsimg.com/assets/p15684_v_h8_ai.jpg?w=960&h=540',
-//       rereleaseYear: '1994',
-//       genre: 'Drama',
-//       title: 'Pulp Fiction',
-//       director: 'Quentin Tarantino',
-//       cast: ['John Travolta', 'Samuel L Jackson', 'Uma Thurman', 'Amanda Plummer'],
-//       youtubeLink: 'https://www.youtube.com/watch?v=TnI7fcP_Pnk&pp=ygUMUHVscCBGaWN0aW9u',
-//     }
-//   ];
 
-// container.insertAdjasent("beforeend" , data[0].name)
+// collection data
+     export const collection = [
+    {
+      img: 'https://ntvb.tmsimg.com/assets/p15684_v_h8_ai.jpg?w=960&h=540',
+      rereleaseYear: '1994',
+      genre: 'Drama',
+      title: 'Pulp Fiction',
+      director: 'Quentin Tarantino',
+      cast: ['John Travolta', 'Samuel L. Jackson', 'Uma Thurman', 'Amanda Plummer', 'Bruce Willis', 'Ving Rhames', 'Harvey Keitel', 'Tim Roth', 
+      'Eric Stoltz', 'Rosanna Arquette'],
+      youtubeLink: 'https://www.youtube.com/watch?v=TnI7fcP_Pnk&pp=ygUMUHVscCBGaWN0aW9u',
+    },
+    {
+      img: 'https://sysfilessacbe149174fee.blob.core.windows.net/public-container/clients/worthingtheatres/files/485ad921-2451-4fdd-94db-c8c19501ee6b.jpg',
+      rereleaseYear: '1972',
+      genre: 'Drama',
+      title: 'The Godfather',
+      director: 'Francis Ford Coppola',
+      cast: ["Marlon Brando, Al Pacino, James Caan, Robert Duvall, Diane Keaton, Talia Shire, John Cazale, Richard S. Castellano, Sterling Hayden, Abe Vigoda"],
+      youtubeLink: 'https://youtu.be/9O1Iy9od7-A',
+    },
+    {
+      img: 'https://res.cloudinary.com/dwzhqvxaz/w_1023,f_auto,q_auto,fl_progressive/v1672832095/Titles/The%20Shawshank%20Redemption/TSR_title-image_1920x1080.jpg',
+      rereleaseYear: '1994',
+      genre: 'Drama',                
+      title: 'The Shawshank Redemption',
+      director: 'Frank Darabont',
+      cast: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
+      youtubeLink: 'https://www.youtube.com/watch?v=6hB3S9bIaco',
+    },
+    {
+      img: 'http://www.studioremarkable.com/wp-content/uploads/2012/08/Dark-Knight-Trilogy-1024x576.jpg',
+      rereleaseYear: '2008',
+      genre: 'Action, Crime, Drama',
+      title: 'The Dark Knight',
+      director: 'Christopher Nolan',
+      cast: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart'],
+      youtubeLink: 'https://www.youtube.com/watch?v=_PZpmTj1Q8Q',
+    },
+    {
+      img: 'https://i.ytimg.com/vi/ajeR8jn_m_s/maxresdefault.jpg',
+      rereleaseYear: '1982',
+      genre: 'science fiction film',
+      title: 'Blade Runner',
+      director: ' Ridley Scott',
+      cast:[ "Harrison Ford, Rutger Hauer, Sean Young, Edward James Olmos, Daryl Hannah, Joanna Cassidy, William Sanderson, Brion James"],
+      youtubeLink: 'https://youtu.be/eogpIG53Cis?t=9',
+    },
+  ];

@@ -1,21 +1,11 @@
 
-// collection data
-const collection = [
-    {
-      img: 'https://ntvb.tmsimg.com/assets/p15684_v_h8_ai.jpg?w=960&h=540',
-      rereleaseYear: '1994',
-      genre: 'Drama',
-      title: 'Pulp Fiction',
-      director: 'Quentin Tarantino',
-      cast: ['John Travolta', 'Samuel L Jackson', 'Uma Thurman', 'Amanda Plummer'],
-      youtubeLink: 'https://www.youtube.com/watch?v=TnI7fcP_Pnk&pp=ygUMUHVscCBGaWN0aW9u',
-    }
-  ];
+import { collection } from './collection.js';
+
   
-  // iliteration from html
+  // SELECTING ALL  ELEMENTS
   const section = document.querySelector('.section');
   const card = document.querySelector('.card');
-  const img = document.querySelector('.image')
+  const image = document.querySelector('.image')
   const releaseYear = document.querySelector('.releaseYear');
   const  genre = document.querySelector(".genre");
   const title = document.querySelector('.title');
@@ -23,70 +13,66 @@ const collection = [
   const cast = document.querySelector('.cast');
   const youtubeLink = document.querySelector('.youtubeLink');
 
- 
-
-
-
-  // function forclard list 
-  const cardList = (section) => {
-
+ // function for creating card list
+const cardList = (section, data) => {
+  
+  // Iterate over each item in the collection data
+  data.forEach(item => {
+    
     // Create a new card element
     const card = document.createElement('div');
     card.className = 'card';
     section.appendChild(card);
 
-
-    // creating a new div for img  inside the card the card div
+    // creating a new div for img inside the card div
     const image = document.createElement('div');
     image.className = 'image';
+    // Set the image source
+    image.style.backgroundImage = `url(${item.img})`;
     card.appendChild(image);
-   
 
-    //  creating a new div for buttton  inside the card the card div
+    // creating a new div for buttons inside the card div
     const btn = document.createElement('div');
     btn.classList = 'btn';
     btn.innerHTML = `
-    <button class = 'releaseYear'>1970</button>
-    <button class= 'genre'>Drama</button>
+      <button class='releaseYear'>${item.rereleaseYear}</button>
+      <button class='genre'>${item.genre}</button>
     `;
     card.appendChild(btn);
 
-
-    // creating info div which will containes tile class and director name
+    // creating info div which will contain title class and director name
     const info = document.createElement('div');
     info.className = 'info';
-    info.innerHTML= `
-     <h1 class="title">Name</h1>
-     <p class= "director">jean-Didier Enroule</p>
+    info.innerHTML = `
+      <h1 class="title">${item.title}</h1>
+      <p class="director">${item.director}</p>
     `;
-     card.appendChild(info);
+    card.appendChild(info);
 
-
-     //creat a new div for text into card 
-     const text = document.createElement('div');
-     text.className = "text";
-     text.innerHTML = `
-     <p class = "cast">Lorem ipsum dolor sit, amet consectetur 
-     adipisicing elit. Quae inventore nisi, earum commodi amet 
-     repellat ad 
-     deleniti sapiente rem maiores!</p>
-     `;
+    // create a new div for text into card
+    const text = document.createElement('div');
+    text.className = "text";
+    text.innerHTML = `
+      <p class="cast">${item.cast.join(', ')}</p>
+    `;
     card.appendChild(text);
 
-    
     // creating a line 
     const line = document.createElement('div');
     line.className = "line";
     card.appendChild(line);
 
-    //creating div for youtube 
+    // creating div for youtube
     const youtubeLink = document.createElement('div');
     youtubeLink.className = 'youtubeLink';
     youtubeLink.innerHTML = `
-    <i class="bi bi-youtube"></i>
+      <a href="${item.youtubeLink}" target="_blank"><i class="bi bi-youtube"></i></a>
     `;
-
     card.appendChild(youtubeLink);
-   
-  };
-  cardList(section);
+  });
+};
+
+cardList(section, collection);
+
+
+
