@@ -47,4 +47,34 @@
       cast:[ "Harrison Ford, Rutger Hauer, Sean Young, Edward James Olmos, Daryl Hannah, Joanna Cassidy, William Sanderson, Brion James"],
       youtubeLink: 'https://youtu.be/eogpIG53Cis?t=9',
     },
+    {
+      img: 'https://images.thedirect.com/media/tag_thumbnail/avatar-the-way-of-water_VyIagyn.png',
+      rereleaseYear: '2022',
+      genre: 'Drama',
+      title: 'The Way of Water',
+      director: '	James Cameron',
+      cast:[ "Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang, Kate Winslet"],
+      youtubeLink: 'https://youtu.be/d9MyW72ELq0?t=5',
+    },
+    {
+      img: 'https://dx35vtwkllhj9.cloudfront.net/united-artists-releasing/creed-iii/images/regions/us/share.jpg',
+      rereleaseYear: '2023',
+      genre: 'Drama',
+      title: 'Creed III ',
+      director: 'Michael B. Jordan',
+      cast:[ "Ryan Coogler, Keenan Coogler, Zach Baylin"],
+      youtubeLink: 'https://youtu.be/AHmCH7iB_IM?t=4',
+    },
+    {
+      img: 'https://dx35vtwkllhj9.cloudfront.net/united-artists-releasing/creed-iii/images/regions/us/share.jpg',
+      rereleaseYear: '2023',
+      genre: 'Action',
+      title:" Guy Ritchie's The Covenant",
+      director: 'Guy Ritchie',
+      cast:[ " Julianne Moore, Sebastian Stan, Justice Smith, Briana Middleton"],
+      youtubeLink: 'https://www.imdb.com/video/vi1880737049/?playlistId=tt4873118&ref_=tt_ov_vi',
+    },
   ];
+
+
+  	

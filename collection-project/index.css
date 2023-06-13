@@ -13,8 +13,6 @@ body {
 
 .container {
   min-width: 100%;
-
- 
 }
 
 .header {
@@ -139,10 +137,12 @@ body {
 @media (min-width: 500px) {
   body {
     background-color: initial;
-    max-width: 768px;
-    margin: 0 auto;
+    max-width: 768px;;
   }
-
+  .container {
+  max-width: 768px;
+  margin: 30px auto;
+  }
   .card {
     width: 370px;
   }
@@ -150,4 +150,13 @@ body {
   .image {
     width: 370px;
   }
+
+  /* .section {
+ 
+  } */
+
+  /* .card {
+    margin: 20px 20px;
+    width: 370px;
+  } */
 }
