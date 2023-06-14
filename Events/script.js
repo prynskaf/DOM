@@ -61,7 +61,7 @@ const getRandomColor = () => {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
-};
+}; 
 
 // Clear the log by removing all li elements
 const clearLog = () => {
