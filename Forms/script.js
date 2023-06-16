@@ -7,7 +7,7 @@ const  displaySpan = document.getElementById('display-firstname');
 inputField.addEventListener('keyup', function(event) {
   // this line display the displayspan textconrny 
  displaySpan.innerHTML = ` <br>
-  ${inputField.value}`;
+ ${inputField.value}`;
     });
 
 
@@ -31,23 +31,26 @@ inputField.addEventListener('keyup', function(event) {
   });
   
 
+  //
+
   // section 3
   document.addEventListener('DOMContentLoaded', function() {
     var passwordInput = document.getElementById('pwd');
     var confirmPasswordInput = document.getElementById('pwd-confirm');
     var section = document.querySelectorAll('section');
     
-   
+   // section[3] selected
     const section3 = section[3];
     console.log( "section 3 is: ", section3);
    
+    // create a div for the section
     const  messageElement = document.createElement('div');
     messageElement.id = 'password-message';
     section3.append(messageElement);
 
 
 
-    
+    // function for password
     function updatePasswordMessage() {
       var password = passwordInput.value.trim();
       var confirmPassword = confirmPasswordInput.value.trim();
@@ -66,8 +69,26 @@ inputField.addEventListener('keyup', function(event) {
       }
     }
     
+    //Event listener for the keyup
     passwordInput.addEventListener('keyup', updatePasswordMessage);
     confirmPasswordInput.addEventListener('keyup', updatePasswordMessage);
   });
 
+
+  // section 4 selecting darkmode
+  const selectDarkMode = document.getElementById('toggle-darkmode');
+
+  selectDarkMode.addEventListener('change', function() {
+    const body = document.body;
+    const selectedValue = selectDarkMode.value;
+  
+    if (selectedValue === 'dark') {
+      body.style.backgroundColor = 'black';
+      body.style.color = 'white';
+    } else {
+      body.style.backgroundColor = 'white';
+      body.style.color = 'black';
+    }
+  });
+  
   
