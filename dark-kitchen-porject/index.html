@@ -9,29 +9,53 @@
 </head>
 <body>
   <header>
-    <h1>Dark Kitchen</h1>
+    <h class="white">Hungry boy's</h>
     <button id="darkModeToggle" class="darkModeToggle">Toggle Dark Mode</button>
   </header>
 
   <main>
     <div id="categories">
       <button class="categoryBtn" data-category="all">All</button>
-      <button class="categoryBtn" data-category="vegan">Vegan</button>
-      <button class="categoryBtn" data-category="comfort">Comfort Food</button>
+      <button class="categoryBtn" data-category="Food">Food</button>
+      <button class="categoryBtn" data-category="Drinks">Drinks</button>
+      <button class="categoryBtn" data-category="Deserts">Deserts</button>
     </div>
 
 
 
 
     <div id="foodList">
-      <div class="card" data-category="vegan">
-        <h2>Vegan Burger</h2>
-        <p>$9.99</p>
+      <div class="food1">
+      <div class="card" data-category="Food">
+        <h2>Veri Italiani - Mozzarella Pizza </h2>
+        <div class="foodImage">
+          <img src="meal/pizza-mozzarella.png" alt="">
+        </div>
+        <p>£9.99</p>
         <button class="addToCartBtn">Add to Cart</button>
       </div>
-      <div class="card" data-category="comfort">
-        <h2>Mac and Cheese</h2>
-        <p>$7.99</p>
+      <div class="food2">
+      <div class="card" data-category="Food">
+        <h2>Veri Italiani - Mozzarella Pizza </h2>
+        <div class="foodImage">
+          <img src="meal/pizza-hawaiian.png" alt="">
+        </div>
+        <p>€9.99</p>
+        <button class="addToCartBtn">Add to Cart</button>
+      </div>
+        
+        
+      </div>
+
+      <div class="card" data-category="Drinks">
+        <h2>Cola</h2>
+        <p>€7.99</p>
+        <button class="addToCartBtn">Add to Cart</button>
+      </div>
+
+      <div class="card" data-category="Deserts">
+        <h2>Ice Cream</h2>
+        <p>€7.99</p>
         <button class="addToCartBtn">Add to Cart</button>
       </div>
       <!-- Add more food cards here -->
@@ -39,8 +63,9 @@
 
     <div id="cart">
       <h2>Cart</h2>
-      <ul id="cartItems"></ul>
-      <p id="totalAmount">Total: $0.00</p>
+
+      <ol id="cartItems"></ol>
+      <p id="totalAmount">Total: €0.00</p>
     </div>
   </main>
 
