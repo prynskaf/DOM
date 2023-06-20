@@ -5,7 +5,7 @@ const cartItems = document.getElementById('cartItems');
 const totalAmount = document.getElementById('totalAmount');
 const darkModeToggle = document.getElementById('darkModeToggle');
 const  hamMenu =  document.querySelector('.header__close');
-
+const white = document.querySelector('.white')
 const body = document.body;
 
 let currentTotal = 0; // Variable to store the current total amount
@@ -47,13 +47,26 @@ function updateTotalAmount(price) {
 // Toggle dark mode
 darkModeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
+  
+  if(body.classList.contains('dark-mode')) {
+    // Get all elements with the white class and change their color to black
+    const whiteElements = document.querySelectorAll('.white');
+    whiteElements.forEach(element => {
+      element.style.color = 'black';
+    });
+    
+    console.log('the color turns to black');
+  }
 });
 
 
 
-
 //menu icon toggle
-hamMenu.addEventListener('click' , () => {
-    hamMenu.style.display = 'none';
-    hamMenu.style.transition = "all 0.3s ease-in";
-})
+// hamMenu.addEventListener('click' , () => {
+//     hamMenu.style.display = 'none';
+//     hamMenu.style.transition = "all 0.3s ease-in";
+
+  
+// })
+
+
